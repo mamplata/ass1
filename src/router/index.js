@@ -1,20 +1,28 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../components/Home.vue";
-import Skills from "../components/Skills.vue";
-import Contact from "../components/Contact.vue";
+import photo from "../assets/photo.png";
 
 Vue.use(VueRouter);
 
 const routes = [
-  { path: "/", component: Home },
-  { path: "/skills", component: Skills },
-  { path: "/contact", component: Contact }
+  {
+    path: "/",
+    component: () => import("../components/Home.vue"),
+    props: () => ({ photo }),
+  },
+  {
+    path: "/skills",
+    component: () => import("../components/Skills.vue"),
+  },
+  {
+    path: "/contact",
+    component: () => import("../components/Contact.vue"),
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
-  routes
+  routes,
 });
 
 export default router;

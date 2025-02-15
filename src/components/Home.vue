@@ -9,14 +9,14 @@
     <!-- Profile Card -->
     <div class="card mx-auto mt-4 shadow-lg" style="max-width: 600px;">
       <div class="card-body text-center">
-        <img src="https://via.placeholder.com/150" alt="Profile" class="rounded-circle mb-3" width="120">
+        <img :src="photo" alt="Profile" class="rounded-circle mb-3" width="120">
         <h3 class="card-title">Kyle Deejay C. Mamplata</h3>
         <p class="text-muted">Back-end Developer | Problem Solver</p>
         <p>
-          Passionate IT student specializing in backend development with expertise in Laravel, MySQL, and Git. 
+          Passionate IT student specializing in backend development with expertise in Laravel, MySQL, and Git.
           Dedicated to learning new technologies and solving complex problems.
         </p>
-        
+
         <!-- Social Links -->
         <div class="d-flex justify-content-center mt-3">
           <a href="https://github.com/mamplata" class="btn btn-dark me-2" target="_blank">
@@ -36,7 +36,7 @@
         <div class="card-body">
           <h4 class="card-title"><i class="fas fa-leaf text-success"></i> AgroConnect Cabuyao</h4>
           <p class="card-text">
-            An **agricultural information system** integrating **seasonal trends & geotagging of crops** to improve 
+            An **agricultural information system** integrating **seasonal trends & geotagging of crops** to improve
             farming data accuracy and decision-making.
           </p>
           <ul class="list-unstyled">
@@ -64,6 +64,9 @@
 <script>
 export default {
   name: "HomePage",
+  props: {
+    photo: String
+  }
 };
 </script>
 

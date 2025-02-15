@@ -4,7 +4,7 @@
     <nav class="navbar navbar-dark bg-primary shadow-sm">
       <div class="container d-flex justify-content-between align-items-center">
         <a class="navbar-brand fw-bold text-uppercase" href="/">Portfolio</a>
-        
+
         <ul class="nav">
           <li class="nav-item">
             <router-link class="nav-link" to="/" exact-active-class="active">Home</router-link>
