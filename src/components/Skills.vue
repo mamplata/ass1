@@ -38,7 +38,7 @@ export default {
   },
   data() {
     return {
-      selectedComponent: null, // No component displayed initially
+      selectedComponent: TechnicalSkills,
     };
   }
 };

@@ -58,14 +58,14 @@ export default {
         github: "https://github.com/mamplata",
         facebook: "https://www.facebook.com/share/1A2Ccbc83v/"
       },
-      isDropdownOpen: false,
+      isDropdownOpen: true,
       featuredProject: "FeaturedProject",
       hobbies: [
-        { name: "Sleeping", icon: "fas fa-bed", show: false },
-        { name: "Gaming", icon: "fas fa-gamepad", show: false },
-        { name: "Anime & Manga", icon: "fas fa-film", show: false },
-        { name: "Programming", icon: "fas fa-code", show: false },
-        { name: "Problem Solving", icon: "fas fa-lightbulb", show: false }
+        { name: "Sleeping", icon: "fas fa-bed", show: true},
+        { name: "Gaming", icon: "fas fa-gamepad", show: true },
+        { name: "Anime & Manga", icon: "fas fa-film", show: true },
+        { name: "Programming", icon: "fas fa-code", show: true },
+        { name: "Problem Solving", icon: "fas fa-lightbulb", show: true }
       ]
     };
   },
